@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup Form</title>
+    <link rel="stylesheet" href="look.css">
+</head>
+<body>
+    <header>
+        <!-- Header content goes here -->
+    </header>
+
+    <main>
+        <section class="signup">
+            <h2>Create an Account</h2>
+            <form action="process_signup.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <hr>
+            <div class="social-login">
+                <p>Or, login with:</p>
+                <a href="#" class="social-button facebook">Facebook</a>
+                <a href="#" class="social-button google">Google</a>
+                <a href="#" class="social-button twitter">Twitter</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>

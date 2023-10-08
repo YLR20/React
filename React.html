@@ -1,0 +1,172 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+   
+    <link rel="stylesheet" href="ace.css">
+</head>
+</body></html>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="https://i.pinimg.com/564x/96/32/28/963228e7dd86f3a036704161b1c26fb5.jpg" height="200"> 
+                <h1 class="logo"><a href="#">React</a></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html" target="_main">About</a></li>
+                    <li><a href="game.html" target="game">Events</a></li>
+                    <li><a href="guidelines.html" target="guide">Guidelines</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="Login.html"target="login">Login</a></li>
+                    <li><a href="signup.html"target="signup">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/ad/3a/a1/ad3aa168b76a1846c56edad68c218242.gif ">
+
+            <h2 style="
+                color: black;
+            ">Welcome to React
+            <p style="
+                color: green;
+            ">A Webste for Gamers and Binge watchers!</p>
+            </h2><h3 style="
+            color: grey;
+        ">Please read the Terms and Conditions of our Community guideline before jumpimg in. Have a great day</h3>
+            <a href="#" class="cta-button">Get Involved</a>
+            
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p> We want to provide a platform for people, who want to interact with other people with same interests like them</p>
+            <p style="
+                color: green;
+            "></p>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+               
+            <div class="event-card">
+                <img src="https://i.pinimg.com/564x/5c/2f/36/5c2f3615ea4903a16476a5cf4924fdec.jpg" height="200" alt="Event 2">
+                <h3>Event 1</h3>
+                <p>Date: November 15, 2023</p>
+                <p>Location: Gaming Arena</p>
+                <a href="game.html" class="cta-button">Learn More</a>
+            </div>
+            <img src="https://i.pinimg.com/564x/bb/1e/74/bb1e7425933edc5f1eaa7235052b8a48.jpg" height="200" alt="Event 1 ">
+            <h3>Event 2</h3>
+            <p>Date: December 10,2023</p>
+            <p>Location: Community Center</p>
+            <a href="game.html" class="cta-button">Learn More</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@react.com">info@React.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Community. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://i.pinimg.com/564x/b2/ef/68/b2ef689d1f387dfc949d0f63c3865441.jpg "height= "50" alt="Facebook"></a>
+                <a href="#"><img src="https://i.pinimg.com/564x/dc/11/23/dc11230e96e98c3bed7c68921b2039ef.jpg"height ="50" alt="Twitter"></a>
+                <a href="#"><img src="https://i.pinimg.com/564x/6e/bf/9f/6ebf9f0107a59c76a2c510e38f75412d.jpg"height="50" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">// Wait for the document to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Event listener for the "Get Involved" button in the hero section
+            const ctaButton = document.querySelector(".cta-button");
+            if (ctaButton) {
+                ctaButton.addEventListener("click", function () {
+                    alert("Thank you for your interest in getting involved!");
+                });
+            }
+        
+            // Event listener for the "Learn More" buttons in the events section
+            const learnMoreButtons = document.querySelectorAll(".event-card .cta-button");
+            learnMoreButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    alert("Event details will be displayed here.");
+                });
+            });
+        
+            // Load dynamic content (e.g., messages) using AJAX
+            const loadMessagesButton = document.querySelector("#load-messages");
+            const messagesContainer = document.querySelector("#messages-container");
+        
+            if (loadMessagesButton && messagesContainer) {
+                loadMessagesButton.addEventListener("click", function () {
+                    // Simulate an AJAX request (replace with actual AJAX code)
+                    setTimeout(function () {
+                        const newMessage = document.createElement("div");
+                        newMessage.className = "message";
+                        newMessage.textContent = "New message loaded via AJAX!";
+                        messagesContainer.appendChild(newMessage);
+                    }, 1000);
+                });
+            }
+        });
+         </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

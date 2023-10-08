@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Center the form vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form container */
+.login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the button on hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the "Remember Me" checkbox */
+#remember-me {
+    margin-right: 5px;
+}
+
+/* Style extra options and links */
+.extra-options {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.extra-options a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.extra-options span {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+/* Style social login buttons */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-button.facebook {
+    background-color: #1877f2;
+}
+
+.social-button.google {
+    background-color: #DB4437;
+}
+
+.social-button.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
